@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Whitney Collins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script>if (localStorage.getItem('wc_auth') !== 'granted') window.location.href = 'password.html';</script>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Whitney <span>Collins</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav__social">
+        <a href="https://instagram.com/whitneycollins" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="social-icon" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--primary">Book a Call</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="tag">Get in Touch</p>
+      <h1>Let's Start a <span style="color:var(--terra)">Conversation</span></h1>
+      <p>Fill out the form below and I'll be in touch within 48 hours to schedule your free discovery call.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <p class="tag">Before You Reach Out</p>
+          <h2>What Happens <span style="color:var(--terra)">Next</span></h2>
+          <div class="divider"></div>
+          <p>Once you submit the form, I'll review and reach out to you to schedule a free 30-minute discovery call.</p>
+          <p>That call is a chance for us to get to know each other, talk through what you're hoping to work on, and see if we're a good fit, with zero pressure to commit to anything.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail__icon">✉</div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@whitneycollins.co</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">◎</div>
+              <div>
+                <strong>Sessions</strong>
+                <span>Held via Zoom, anywhere in the world</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">◷</div>
+              <div>
+                <strong>Response Time</strong>
+                <span>Within 48 hours, Monday – Friday</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--warm-light);border-radius:16px;padding:28px;margin-top:8px;">
+            <p class="tag" style="margin-bottom:8px;">A Note From Whitney</p>
+            <p style="font-family:var(--font-head);font-size:1.15rem;color:var(--brown-dark);line-height:1.6;margin:0;">"I read every message personally. Whatever you share stays between us. Honesty is welcome here."</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form">
+          <h3 class="form__title">Book Your Free <span style="color:var(--terra)">Discovery Call</span></h3>
+          <p class="form__subtitle">The more you can share, the better! I love to come well-prepared to all discovery sessions.</p>
+
+          <form action="#" method="POST" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Your first name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Your last name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I'm interested in…</label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="discovery">Discovery Session ($150)</option>
+                <option value="oneone">1:1 Coaching Package ($1,200 / 3 months)</option>
+                <option value="group">Group Program ($497 / 6 weeks)</option>
+                <option value="unsure">Not sure yet, let's talk</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="situation">What's going on for you right now?</label>
+              <textarea id="situation" name="situation" placeholder="Tell me a little about where you are and what's feeling hard or stuck. There are no wrong answers here…" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="hope">What do you hope working together could change?</label>
+              <textarea id="hope" name="hope" placeholder="Paint me a picture of what life could look like on the other side of this work…"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="hear">How did you hear about me?</label>
+              <select id="hear" name="how_heard">
+                <option value="" disabled selected>Select one</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="referral">A friend or colleague</option>
+                <option value="google">Google search</option>
+                <option value="podcast">Podcast</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;display:block;text-align:center;">
+              Send My Message
+            </button>
+          </form>
+
+          <!-- Success state (hidden by default) -->
+          <div id="successMsg" style="display:none;text-align:center;padding:48px 0;">
+            <div style="font-size:2.5rem;margin-bottom:16px;">✦</div>
+            <h3 style="margin-bottom:12px;">Message Received!</h3>
+            <p>Thank you for reaching out. I'll be in touch within 48 hours to schedule our call. I'm looking forward to connecting with you.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand-name">Whitney <span>Collins</span></div>
+          <p class="footer__tagline">Helping women step into lives that feel intentional, joyful, and deeply their own.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Pages</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/whitneycollins" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+          <ul class="footer__links">
+            <li><a href="contact.html">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Whitney Collins Coaching. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.querySelector('form').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Whitney Collins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script>if (localStorage.getItem('wc_auth') !== 'granted') window.location.href = 'password.html';</script>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Whitney <span>Collins</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__social">
+        <a href="https://instagram.com/whitneycollins" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="social-icon" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--primary">Book a Call</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="tag">Work With Me</p>
+      <h1>Services &amp; Offerings</h1>
+      <p>Three ways to work together, from a single clarity session to a full transformation partnership.</p>
+    </div>
+  </div>
+
+  <!-- SERVICES LIST -->
+  <section class="section">
+    <div class="container">
+      <div class="services-full">
+
+        <!-- Discovery -->
+        <div class="service-row">
+          <div>
+            <p class="tag">Perfect for Getting Started</p>
+            <h3>Single Session</h3>
+            <p>Not sure where to begin? This 60-minute session is designed to give you clarity. We'll map out exactly where you are, what you want, and what's been blocking you. You'll leave with a clear picture of your next steps, whether we continue working together or not.</p>
+            <ul class="includes">
+              <li>60-minute online session</li>
+              <li>Pre-session clarity questionnaire</li>
+              <li>Session recording sent afterward</li>
+              <li>Written summary of insights &amp; next steps</li>
+            </ul>
+          </div>
+          <div class="service-row__meta">
+            <div class="service-row__price">$150</div>
+            <div class="service-row__duration">one-time session</div>
+            <a href="contact.html" class="btn btn--primary">Book Now</a>
+          </div>
+        </div>
+
+        <!-- 1:1 Package -->
+        <div class="service-row">
+          <div>
+            <p class="tag">Most Popular</p>
+            <h3>1:1 Coaching Package</h3>
+            <p>Three months of dedicated partnership. This is for the woman who's ready to stop procrastinating and make real, lasting change. We meet weekly, work through your specific challenges and goals, and I'm available via voice note or text message between sessions so momentum never stalls.</p>
+            <ul class="includes">
+              <li>12 weekly 60-minute sessions</li>
+              <li>Personalized coaching roadmap</li>
+              <li>Voice/text message support between sessions</li>
+              <li>Curated resources, exercises &amp; journal prompts tailored to you</li>
+              <li>Session recordings</li>
+              <li>30-day follow-up check-in after program ends</li>
+            </ul>
+          </div>
+          <div class="service-row__meta">
+            <div class="service-row__price">$1,200</div>
+            <div class="service-row__duration">3-month program</div>
+            <a href="contact.html" class="btn btn--primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Group -->
+        <div class="service-row">
+          <div>
+            <p class="tag">Community &amp; Connection</p>
+            <h3>Group Coaching Program</h3>
+            <p>Six weeks inside a small, intimate cohort of women doing the same work. You'll get live weekly group calls, private journaling prompts, and the particular magic that comes from being witnessed and supported by a community of people who hold space for you.</p>
+            <ul class="includes">
+              <li>6 weekly 90-minute group calls (max 6 participants)</li>
+              <li>Weekly journaling &amp; reflection prompts</li>
+              <li>Private community channel</li>
+              <li>Lifetime access to session recordings</li>
+            </ul>
+          </div>
+          <div class="service-row__meta">
+            <div class="service-row__price">$497</div>
+            <div class="service-row__duration">6-week program</div>
+            <a href="contact.html" class="btn btn--primary">Join Waitlist</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div style="max-width:720px;margin:0 auto;">
+        <div class="text-center">
+          <p class="tag">Common Questions</p>
+          <h2>What to Expect</h2>
+          <div class="divider divider--center"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px;margin-top:48px;">
+          <div class="service-card" style="padding:28px 32px;">
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">How do I know which option is right for me?</h3>
+            <p style="font-size:.93rem;">If you're not sure, start with a free Discovery Session. It's designed exactly for that moment of "I know something needs to change, I just don't know what." From there, we can decide together whether you'd benefit from single sessions, 1:1 long term or a group package.</p>
+          </div>
+          <div class="service-card" style="padding:28px 32px;">
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">Do you offer payment plans?</h3>
+            <p style="font-size:.93rem;">Yes, the 1:1 package can be split into monthly payments. Just mention it when you reach out, and we can work out what's best for you.</p>
+          </div>
+          <div class="service-card" style="padding:28px 32px;">
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">How are sessions held?</h3>
+            <p style="font-size:.93rem;">All sessions are held over Zoom. You'll receive a link when you book. Sessions are recorded and sent to you within 24 hours so you can revisit the conversation anytime.</p>
+          </div>
+          <div class="service-card" style="padding:28px 32px;">
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">What if it's not the right fit?</h3>
+            <p style="font-size:.93rem;">I take fit seriously. That's why I offer a free 30-minute call before any commitment. I want to make sure we're aligned. If after the first session something feels off, we'll talk about it and find the best path forward together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <p class="tag" style="color:rgba(255,255,255,.6);">Not Sure Where to Start?</p>
+      <h2>Let's Figure It Out Together</h2>
+      <p>Book a free 30-minute call and we'll find the right fit for you, no pressure, just an honest conversation.</p>
+      <a href="contact.html" class="btn btn--light">Book Your Free Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand-name">Whitney <span>Collins</span></div>
+          <p class="footer__tagline">Helping women step into lives that feel intentional, joyful, and deeply their own.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Pages</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/whitneycollins" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+          <ul class="footer__links">
+            <li><a href="contact.html">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Whitney Collins Coaching. All rights reserved.</span>
+        <span>Made with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
