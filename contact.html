@@ -92,7 +92,10 @@
           <h3 class="form__title">Book Your Free <span style="color:var(--terra)">Discovery Call</span></h3>
           <p class="form__subtitle">The more you can share, the better! I love to come well-prepared to all discovery sessions.</p>
 
-          <form action="#" method="POST" onsubmit="handleSubmit(event)">
+          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="access_key" value="b52941d3-99c5-41cc-88de-965cfb4322cb" />
+            <input type="hidden" name="subject" value="New Coaching Inquiry - Whitney Collins" />
+            <input type="hidden" name="redirect" value="false" />
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First Name</label>
@@ -200,10 +203,16 @@
     const links  = document.getElementById('navLinks');
     toggle.addEventListener('click', () => links.classList.toggle('open'));
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
-      document.querySelector('form').style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
+      const form = e.target;
+      const data = new FormData(form);
+      const res = await fetch(form.action, { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) {
+        form.style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+      }
     }
   </script>
 </body>
