@@ -229,7 +229,7 @@ p  { color: var(--text-light); }
 
 /* ── Intro strip ────────────────────────────────────── */
 .intro-strip {
-  background: #6B9470; color: var(--white);
+  background: #2A2218; color: var(--white);
   padding: 20px 0;
 }
 .intro-strip__inner {
@@ -340,7 +340,7 @@ p  { color: var(--text-light); }
 
 /* ── Footer ─────────────────────────────────────────── */
 .footer {
-  background: #6B9470; color: rgba(255,255,255,.6);
+  background: #2A2218; color: rgba(255,255,255,.6);
   padding: 64px 0 32px;
 }
 .footer__inner {
