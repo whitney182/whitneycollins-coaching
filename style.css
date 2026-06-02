@@ -2,8 +2,8 @@
 :root {
   --cream:      #FAF7F2;
   --warm-light: #F0E6D8;
-  --terra:      #7A9E7E;
-  --terra-dark: #5F8463;
+  --terra:      #C17A73;
+  --terra-dark: #A5625A;
   --sage:       #8A9E85;
   --brown:      #4A3728;
   --brown-dark: #3D2B1F;
@@ -229,7 +229,7 @@ p  { color: var(--text-light); }
 
 /* ── Intro strip ────────────────────────────────────── */
 .intro-strip {
-  background: var(--brown-dark); color: var(--white);
+  background: #6B9470; color: var(--white);
   padding: 20px 0;
 }
 .intro-strip__inner {
@@ -340,7 +340,7 @@ p  { color: var(--text-light); }
 
 /* ── Footer ─────────────────────────────────────────── */
 .footer {
-  background: var(--brown-dark); color: rgba(255,255,255,.6);
+  background: #6B9470; color: rgba(255,255,255,.6);
   padding: 64px 0 32px;
 }
 .footer__inner {
