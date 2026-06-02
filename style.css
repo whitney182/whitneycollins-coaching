@@ -165,7 +165,8 @@ p  { color: var(--text-light); }
   background: linear-gradient(135deg, #F5EDE0 0%, #EDD8C4 50%, #E8CFBA 100%);
   position: relative;
   overflow: hidden;
-  padding-top: var(--nav-h);
+  padding-top: calc(var(--nav-h) + 60px);
+  padding-bottom: 60px;
 }
 .hero::before {
   content: '';
