@@ -442,7 +442,7 @@ p  { color: var(--text-light); }
   border: 1px solid rgba(193,125,92,.15);
   position: sticky; top: calc(var(--nav-h) + 24px);
 }
-.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; filter: brightness(1.08); }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; filter: brightness(1.08); transform: scale(1.12) translateY(-6%); }
 .about-text p { margin-bottom: 20px; }
 
 .about-pull-quote {
