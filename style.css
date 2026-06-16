@@ -507,9 +507,18 @@ p  { color: var(--text-light); }
 .service-row {
   background: var(--white); border-radius: 16px; padding: 48px;
   border: 1px solid rgba(193,125,92,.1);
-  display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+  display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start;
 }
 .service-row__meta { text-align: right; }
+.service-row__sublabel {
+  font-family: var(--font-body); font-weight: 600; font-size: .72rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--terra);
+  margin: 28px 0 12px;
+}
+.qualifies { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
+.qualifies li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--text-light); }
+.qualifies li::before { content: '›'; color: var(--terra); font-weight: 700; flex-shrink: 0; }
+.service-row__note { font-size: .78rem; color: var(--text-light); margin-top: 14px; font-style: italic; }
 .service-row__price {
   font-family: var(--font-head); font-size: 2.2rem;
   color: var(--terra); font-weight: 600; line-height: 1;
