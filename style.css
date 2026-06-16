@@ -515,6 +515,7 @@ p  { color: var(--text-light); }
   letter-spacing: .12em; text-transform: uppercase; color: var(--terra);
   margin: 28px 0 12px;
 }
+.qualifies + .service-row__sublabel { margin-top: 44px; }
 .qualifies { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
 .qualifies li { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; color: var(--text-light); }
 .qualifies li::before { content: '›'; color: var(--terra); font-weight: 700; flex-shrink: 0; }
